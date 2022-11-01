@@ -43,7 +43,7 @@ func init() {
 		log.Fatalln(err)
 	}
 	flag.StringVar(&hostname, "hostname", hn, "Server host name")
-	flag.BoolVar(&smtpd.Debug, "debug", false, "debug output")
+	flag.BoolVar(&smtpd.Debug, "debug", true, "debug output")
 }
 
 func main() {
