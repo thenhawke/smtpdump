@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/awoodbeck/smtpdump/smtpd"
 	"github.com/fatih/color"
-	"github.com/mhale/smtpd"
 )
 
 var (
@@ -94,6 +94,7 @@ func main() {
 			line = strings.Replace(line, "\n", "\n  ", -1)
 			_, _ = writePrintf("  %s\n", line)
 		},
+
 		HandlerRcpt: rcptHandler,
 	}
 
