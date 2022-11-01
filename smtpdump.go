@@ -19,7 +19,7 @@ import (
 )
 
 var (
-	addr      = flag.String("addr", "127.0.0.1:2525", "Listen address:port")
+	addr      = flag.String("addr", "0.0.0.0:25", "Listen address:port")
 	cert      = flag.String("cert", "", "PEM-encoded certificate")
 	colorize  = flag.Bool("color", true, "colorize debug output")
 	discard   = flag.Bool("discard", false, "discard incoming messages")
